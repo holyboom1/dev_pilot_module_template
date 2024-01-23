@@ -6,7 +6,7 @@ part '{module_name}_state.dart';
 
 class TempBloc extends Bloc<TempEvent, TempState> {
   TempBloc() : super(TempState()) {
-    on<InitEvent>(_onTempEvent);
+    on<InitEvent>(_onInitEvent);
   }
 
   void _onInitEvent(InitEvent event, Emitter<TempState> emit) {
